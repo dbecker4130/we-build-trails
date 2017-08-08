@@ -33,7 +33,7 @@ if (production) {
 }
 
 module.exports = {
-  entry: `${__dirname}/app/enty.js`,
+  entry: `${__dirname}/app/entry.js`,
   devtool: production ? false : 'eval',
   plugins,
   output: {
@@ -46,11 +46,11 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel'
+        loader: 'babel-loader'
       },
       {
         test: /\.html$/,
-        loader: 'html'
+        loader: 'html-loader'
       },
       {
         test: /\.(woff|ttf|svg|eot).*/,
@@ -64,12 +64,12 @@ module.exports = {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract('style', 'css!resolve-url!sass?sourceMap')
       },
-      // {
-      //   test: /\.mp4$/,
-      //   loader: 'file',
-      //   include: path.join(`${__dirname}/assets/video`)
-      // }
+      {
+        test: /\.mp4$/,
+        loader: 'file',
+        include: path.join(`${__dirname}/assets/video`)
+      }
       // NOTE: Temp in case of video upload with ng-file-upload
     ]
   }
-}
+};
