@@ -107,5 +107,52 @@ function postService($q, $log, $http, authService) {
     });
   };
 
+  service.fetchAllPostsFromDB = function() {
+    $log.debug('postService.fetchAllPostsFromDB()');
+
+    return authService.getToken()
+
+    .then( tokne => {
+      let url = `${__API_URL__}/api/post`;
+      let config = {
+        headers: {
+          'Accect': 'application/json',
+          Authorization: `Bearer ${token}`
+        }
+      };
+      return $http.get(url, config);
+    });
+  };
+
+  service.fetchProfilePosts = function() {
+    $log.debug('postService.fetchProfilePosts()');
+
+    authService.getUserId();
+
+    return authService.getToken()
+
+    .then( token => {
+      let url = `${__API_URL__}/api/${authService.currentUserID}/post`;
+      let config = {
+        headers: {
+          'Accept': 'application/json',
+          Authorization: `Bearer ${token}`
+        }
+      };
+      return $http.get(url, config);
+    })
+    .then( res => {
+      $log.log('profile posts retrieved');
+      service.allPosts = res.data;
+      console.log(service.allPosts);
+      return service.allPosts;
+    })
+    .catch( err => {
+      $log.error(err.message);
+      return $q.reject(err);
+    });
+  };
+
+  return service;
 
 }
