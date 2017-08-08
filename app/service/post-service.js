@@ -112,7 +112,7 @@ function postService($q, $log, $http, authService) {
 
     return authService.getToken()
 
-    .then( tokne => {
+    .then( token => {
       let url = `${__API_URL__}/api/post`;
       let config = {
         headers: {
