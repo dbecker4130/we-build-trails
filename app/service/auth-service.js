@@ -49,7 +49,7 @@ function authService($q, $log, $http, $window) {
   service.signUp = function(user) {
     $log.debug('authService.signup()');
 
-    let url = `${__API_URL__}/api/signup`;
+    let url = `${__API_URL__}/api/signup`; //eslint-disable-line
     let config = {
       headers: {
         'Content-Type': 'application/json',
@@ -72,7 +72,7 @@ function authService($q, $log, $http, $window) {
   service.signIn = function(user) {
     $log.debug('authService.signin()');
 
-    let url = `${__API_URL__}/api/signin`;
+    let url = `${__API_URL__}/api/signin`; //eslint-disable-line
     let base64 = $window.btoa(`${user.username}:${user.password}`);
     let config = {
       headers: {
@@ -109,7 +109,7 @@ function authService($q, $log, $http, $window) {
 
     return service.getToken()
     .then( token => {
-      let url = `${__API_URL__}/api/user/${service.currentUserID}`;
+      let url = `${__API_URL__}/api/user/${service.currentUserID}`; //eslint-disable-line
       let config = {
         headers: {
           'Accept': 'application/json',
