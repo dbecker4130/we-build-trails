@@ -42,7 +42,35 @@ function imageService($q, $log, $http, Upload, authService) {
     });
   };
 
+  service.deletePostImage = function(postData, imageData) {
+    $log.debug('imageService.deletePostImage()');
 
+    return authService.getToken()
+    .then( token => {
+      let url = `${__API_URL__}/api/post/${postData._id}/image/${imageData._id}`;
+      let config = {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        }
+      };
+      return $http.delete(url, config);
+    })
+    .then(() => {
+      for (var i = 0; i < postData.images.length; i++) {
+        let current = postData.images[i];
+        if (current._id === imageData._id) {
+          postData.images.splice(i, 1);
+          break;
+        }
+      }
+      $log.log('image deleted');
+    })
+    .catch( err => {
+      $log.error(err.message);
+      return $q.reject(err);
+    });
+  };
 
+  return service;
 
 }
