@@ -1,5 +1,7 @@
 'use strict';
 
+require('./_signin.scss');
+
 module.exports = {
   template: require('./signin.html'),
   controller: ['$log', '$location', 'authService', SigninContoller],
@@ -15,7 +17,7 @@ function SigninContoller($log, $location, authService) {
   })
   .catch( err => {
     $log.error(err.message);
-    alert('- Username: 4 characters ' + '\n' + '- Password: 6 charaters');
+    // alert('- Username: 4 characters ' + '\n' + '- Password: 6 charaters');
   });
 
   this.signin = function() {

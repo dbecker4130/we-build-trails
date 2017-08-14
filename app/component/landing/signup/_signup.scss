@@ -1,0 +1,16 @@
+@import "../../../scss/lib/theme/vars";
+
+.signup-form {
+  width: 60vw;
+  // border: 1px solid red;
+
+  margin: 32vw auto 0 auto;
+  .input-std {
+    background-color: $brand-background;
+    border: 1px solid $white;
+    color: $white;
+  }
+  input::-webkit-input-placeholder {
+    color: $white;
+  }
+}

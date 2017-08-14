@@ -10,6 +10,7 @@
 
       <input
         type="text"
+        class="input-std"
         placeholder="username"
         ng-minlength="4"
         ng-model="signinCtrl.user.username" required />
@@ -22,11 +23,12 @@
 
       <input
         type="text"
+        class="input-std"
         placeholder="placeholder"
         ng-minlength="6"
         ng-model="signinCtlr.user.password"
         ng-disabled="sigininForm.username.$invalid" />
     </div>
-    <button>sign in</button>
+    <button class="btn-secondary">sign in</button>
   </form>
 </section>
