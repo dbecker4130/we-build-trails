@@ -23,7 +23,7 @@ function SignupController($log, $location, authService){
     .then(() => {
       $location.url('/home');
     }).catch(() => {
-      alert('- Username: 4 characters ' + '\n' + '- Email: 6 characters' + '\n' + '- Password: 6 charaters');
+      // alert('- Username: 4 characters ' + '\n' + '- Email: 6 characters' + '\n' + '- Password: 6 charaters');
     });
   };
 }
