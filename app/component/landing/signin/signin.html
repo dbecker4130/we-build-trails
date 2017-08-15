@@ -1,7 +1,7 @@
 <section class="signin">
   <form class="signin-form"
         name="sigininForm"
-        ng-submit="signinCtrl.signIn()"
+        ng-submit="signinCtrl.signin()"
         novalidate>
     <div ng-class="{
       'error': sigininForm.username.$invalid,
@@ -17,18 +17,18 @@
     </div>
 
     <div class="{
-      'error': signinForm.password.$invalid,
+      'error': signinForm.password.$invalid && signinForm.$submitted,
       'success': signinForm.password.$valid
     }">
 
       <input
         type="text"
         class="input-std"
-        placeholder="placeholder"
+        placeholder="password"
         ng-minlength="6"
-        ng-model="signinCtlr.user.password"
+        ng-model="signinCtrl.user.password"
         ng-disabled="sigininForm.username.$invalid" />
     </div>
-    <button class="btn-secondary">sign in</button>
+    <button class="btn-secondary" type="submit">sign in</button>
   </form>
 </section>
