@@ -1,0 +1,17 @@
+@import "../../scss/lib/theme/vars";
+
+.landing {
+  .join-container {
+    .join-inner {
+      font-size: $font-std;
+      .signup-link {
+        // border: 1px solid red;
+        padding-left: 60vw;
+      }
+      .signin-link {
+        // border: 1px solid green;
+        padding-left: 60vw;
+      }
+    }
+  }
+}

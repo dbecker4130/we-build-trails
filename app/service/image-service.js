@@ -12,7 +12,7 @@ function imageService($q, $log, $http, Upload, authService) {
 
     return authService.getToken()
     .then( token => {
-      let url = `${__API_URL__}/api/post/${postData._id}/image`;
+      let url = `${__API_URL__}/api/post/${postData._id}/image`; //eslint-disable-line
       let headers = {
         'Accept': 'application/json',
         Authorization: `Bearer ${token}`
@@ -47,7 +47,7 @@ function imageService($q, $log, $http, Upload, authService) {
 
     return authService.getToken()
     .then( token => {
-      let url = `${__API_URL__}/api/post/${postData._id}/image/${imageData._id}`;
+      let url = `${__API_URL__}/api/post/${postData._id}/image/${imageData._id}`; //eslint-disable-line
       let config = {
         headers: {
           Authorization: `Bearer ${token}`,

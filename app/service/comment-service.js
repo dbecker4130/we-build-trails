@@ -12,7 +12,7 @@ function commentService($q, $log, $http, authService) {
 
     return authService.getToken()
     .then( token => {
-      let url = `${__API_URL__}/api/post/${postData._id}/comment`;
+      let url = `${__API_URL__}/api/post/${postData._id}/comment`; //eslint-disable-line
       let config = {
         headers: {
           'Accept': 'application/json',
@@ -39,7 +39,7 @@ function commentService($q, $log, $http, authService) {
 
     return authService.getToken()
     .then( token => {
-      let url = `${__API_URL__}/api/post/${postData._id}/comment/${commentData._id}`;
+      let url = `${__API_URL__}/api/post/${postData._id}/comment/${commentData._id}`; //eslint-disable-line
       let config = {
         headers: {
           Authorization: `Bearer ${token}`,

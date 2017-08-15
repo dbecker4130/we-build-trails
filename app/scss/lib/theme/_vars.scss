@@ -1,0 +1,23 @@
+// :: COLORS ::
+$black: #000;
+$white: #fff;
+
+$brand-primary: #444; // :: DARK
+$brand-secondary: #F5F5F5; // :: LIGHT
+$brand-terciary: #CDCDCD; //:: MED
+$brand-background: rgba(0,0,0,0.4); 
+
+$btn-hover-primary: $brand-primary * 2;
+$btn-hover-secondary: $brand-secondary * 2;
+$btn-hover-terciary: $brand-terciary * 2;
+
+
+// :: GUTTER SIZES ::
+$gutter-std: 5%;
+$gutter-sm: $gutter-std / 2;
+$gutter-lg: $gutter-std * 2;
+
+// :: FONT SIZES ::
+$font-lg: 2em;
+$font-std: 1em;
+$font-sm: $font-std / 2;
