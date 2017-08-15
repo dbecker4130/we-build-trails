@@ -1,0 +1,28 @@
+@import "../../../scss/lib/theme/vars";
+
+.home-posts {
+  width: 60vw;
+  background-color: $brand-background;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  margin: 2vw auto 4vw auto;
+
+  .user-wrapper {
+    padding: 3vw;
+    color: $white;
+  }
+
+  .info-wrapper {
+    padding: 3vw;
+    color: $white;
+  }
+
+  .post-images-wrapper {
+    ul {
+      li {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

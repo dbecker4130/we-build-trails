@@ -1,0 +1,32 @@
+<li class="home-posts">
+  <div class="current-item">
+
+    <div class="user-wrapper">
+      <p class="post-user">{{ homePostCtrl.post.userID.username }}</p>
+    </div>
+
+    <div class="post-images-wrapper">
+      <ul
+      ng-repeat="item in homePostCtrl.post.images"
+      post="homePostCtrl.post">
+        <li>
+          <img ng-src="{{ item.imageURI }}" />
+        </li>
+      </ul>
+    </div>
+
+    <div class="info-wrapper">
+      <p class="post-title">{{ homePostCtrl.post.title }}</p>
+      <p class="post-created">{{ homePostCtrl.post.created | date: 'MMM d, y h:mm a' }}</p>
+    </div>
+
+
+    <div class="post-comments-wrapper">
+      <ul
+        ng-repeat="item in homePostCtrl.post.comments"
+        post="homePostCtrl.post">
+        <li>{{ item.desc }}</li>
+      </ul>
+    </div>
+  </div>
+</li>

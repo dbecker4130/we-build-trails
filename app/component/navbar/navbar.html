@@ -1,0 +1,17 @@
+<section class="navbar">
+  <div class="home-logo">
+    <h2 ng-click="navbarCtrl.homeLink()">W</h2>
+  </div>
+
+  <div class="buttons">
+    <button ng-hide="navbarCtrl.hideButtons"
+      ng-click="navbarCtrl.profileLink()"
+      class="btn-secondary">Profile
+    </button>
+
+    <button ng-hide="navbarCtrl.hideButtons"
+      ng-click="navbarCtrl.logout()"
+      class="btn-secondary">
+      Logout
+    </button>
+</section>
