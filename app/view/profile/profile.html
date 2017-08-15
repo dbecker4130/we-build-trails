@@ -1,0 +1,14 @@
+<section class="profile">
+
+  <create-post></create-post>
+
+  <div class="posts-container">
+    <ul>
+      <post-item
+        ng-repeat="item in profileCtrl.allPosts"
+        post="item">
+      </post-item>
+    </ul>
+  </div>
+
+</section>
