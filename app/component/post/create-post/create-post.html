@@ -1,0 +1,12 @@
+<section class="create-post">
+  <form class="post-form"
+    ng-submit="createPostCtrl.createPost()">
+    <input
+      class="title"
+      placeholder="Title ..."
+      ng-model="createPostCtrl.post.title" required>
+
+    <button class="btn-secondary" type="submit">&#10143;</button>
+
+  </form>
+</section>
