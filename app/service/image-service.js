@@ -14,8 +14,8 @@ function imageService($q, $log, $http, Upload, authService) {
     .then( token => {
       let url = `${__API_URL__}/api/post/${postData._id}/image`; //eslint-disable-line
       let headers = {
+        Authorization: `Bearer ${token}`,
         'Accept': 'application/json',
-        Authorization: `Bearer ${token}`
       };
 
       if (files && files.length) {
