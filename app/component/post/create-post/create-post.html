@@ -1,13 +1,24 @@
 <section class="create-post">
-  <form class="post-form"
-    ng-submit="createPostCtrl.createPost()">
-    <input
-      class="title"
-      placeholder="Title ..."
-      ng-model="createPostCtrl.post.title" required>
 
-    <button class="btn-secondary" type="submit">&#10143;</button>
+  <!-- <div class="create-post-link"
+    ng-model="checked" aria-label="Toggle ngShow">
 
-  </form>
+    <p>&#10011;</p>
+  </div> -->
+
+  <input type="checkbox" ng-model="checked" aria-label="Toggle ngShow"> Create Post<br />
+
+  <div class="check-element animate-show-hide" ng-show="checked">
+    <form class="post-form"
+      ng-submit="createPostCtrl.createPost()">
+      <input
+        class="title"
+        placeholder="Title ..."
+        ng-model="createPostCtrl.post.title" required>
+
+      <button class="btn-secondary" type="submit">&#10143;</button>
+
+    </form>
+  </div>
   <!-- <upload-image></upload-image> -->
 </section>

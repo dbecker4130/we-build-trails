@@ -2,12 +2,20 @@
 
 .create-post {
   // border: 1px solid red;
-  height: 34vw;
-  width: 60vw;
-  background-color: $brand-background;
-  padding: 3vw;
+  // height: 34vw;
+  // width: 60vw;
+  // background-color: $brand-background;
+  // padding: 3vw;
+  //
+  // margin: 10vw 20vw 5vw 20vw;
 
-  margin: 10vw 20vw 5vw 20vw;
+  .create-post-link {
+    position: absolute;
+    width: 10vw;
+    left: 5vw;
+    top: 15vw;
+    border: 1px solid green;
+  }
 
   .cp-title {
     font-size: 2.5vw;
@@ -17,6 +25,13 @@
     font-family: $font-primary;
   }
   .post-form {
+    border: 1px solid red;
+    height: 34vw;
+    width: 60vw;
+    background-color: $brand-background;
+    padding: 3vw;
+
+    margin: 10vw 20vw 5vw 20vw;
     .title {
       width: 100%;
       box-sizing: border-box;
