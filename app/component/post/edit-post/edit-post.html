@@ -1,0 +1,17 @@
+<section class="edit">
+  <form class="edit-post"
+    name="editPost"
+    ng-submit="editPostCtrl.updatePost()"
+    no-validate>
+
+    <div class="edit-container">
+
+      <fieldset>
+        <input name="name" class="title-input" ng-model="editPostCtrl.post.title">
+      </fieldset>
+
+    </div>
+
+    <button type="submit" class="btn-secondary">update</button>
+  </form>
+</section>

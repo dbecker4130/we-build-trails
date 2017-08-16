@@ -1,0 +1,28 @@
+@import "../../scss/lib/theme/vars";
+
+.navbar {
+  height: 6vw;
+  background: $brand-background;
+
+  .home-logo {
+    width: 20vw;
+    float: left;
+    margin: 1vw $gutter-std;
+    h2 {
+      font-size: $font-lg;
+      color: $white;
+      padding-left: $gutter-lg *2;
+
+      &:hover {
+        color: #a7f7fa;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .buttons {
+    float: right;
+    width: 30vw;
+    margin-top: $gutter-sm/2;
+  }
+}

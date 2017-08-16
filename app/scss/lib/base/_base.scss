@@ -15,6 +15,13 @@ img {
   height: auto;
 }
 
+a {
+  color: #a7f7fa;
+  &:hover {
+    color: $white;
+  }
+}
+
 button {
   padding: 1% 4%;
   color: $white;

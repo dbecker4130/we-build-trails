@@ -1,0 +1,13 @@
+@import "../../../scss/lib/theme/vars";
+
+
+.upload-image {
+  margin-top: 1vw;
+  color: $black;
+  button {
+    margin-top: $gutter-sm/2;
+    margin-left: 2.5vw;
+    margin-bottom: $gutter-sm;
+
+  }
+}
