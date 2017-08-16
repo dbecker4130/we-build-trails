@@ -1,0 +1,45 @@
+@import "../../../scss/lib/theme/vars";
+
+
+.thumbnail {
+  position: relative;
+  // margin-bottom: 10px;
+  border: none;
+  padding: 0%;
+
+  .thumbnail-rendered {
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .del-img-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0.5vw;
+    border: none;
+    color: $white;
+    background-color: rgba(0,0,0,0.4);
+    font-family: $font-primary;
+    font-size: 3vw;
+    margin-bottom: 1vw;
+    padding: 0% 4%;
+    &:hover {
+      color: red;
+      cursor: pointer;
+    }
+  }
+
+  .X {
+    position: absolute;
+    bottom: 1vw;
+    right: 3vw;
+    font-family: $font-primary;
+    font-size: 3.5vw;
+    &:hover {
+      color: red;
+      cursor: pointer;
+    }
+  }
+}
