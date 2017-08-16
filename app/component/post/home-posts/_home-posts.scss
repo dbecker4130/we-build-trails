@@ -7,13 +7,19 @@
   margin: 2vw auto 4vw auto;
 
   .user-wrapper {
-    padding: 3vw;
+    float: left;
     color: $white;
+    padding: 2%;
   }
 
   .info-wrapper {
-    padding: 3vw;
+    margin-left: 15vw;
+    padding: $gutter-sm 0;
     color: $white;
+    .post-created {
+      font-size: $font-sm;
+      padding: 2% 0;
+    }
   }
 
   .post-images-wrapper {
