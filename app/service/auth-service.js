@@ -121,8 +121,8 @@ function authService($q, $log, $http, $window) {
     })
     .then( res => {
       $log.log('user data retrieved');
-      service.userData = res.data;
-      return service.userData;
+      let userData = res.data;
+      return userData;
     })
     .catch( err => {
       $log.error('user data not retrieved', err.message);

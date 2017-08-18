@@ -7,7 +7,7 @@ module.exports = {
   controller: ['$log', 'postService', 'authService', HomePostController],
   controllerAs: 'homePostCtrl',
   bindings: {
-    user: '<',
+    // user: '<',
     post: '<'
   }
 };

@@ -1,0 +1,11 @@
+<div class="create-post-container">
+  <div class="button-container" ng-if="!createPostContCtrl.showCreatePost">
+    <button class="btn-secondary" ng-click="createPostContCtrl.showCreatePost = !createPostContainerCtrl.showCreatePost">Create Post</button>
+  </div>
+
+  <p>Welcome! {{ createPostContCtrl.user.username }}</p>
+  <create-post ng-if="createPostContCtrl.showCreatePost && !createPostContCtrl.showUploadImage" post="createPostContCtrl.post"></create-post>
+
+  <post-item ng-if="createPostContCtrl.showUploadImage"></post-item>
+
+</div>
