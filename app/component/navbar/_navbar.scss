@@ -14,7 +14,7 @@
       padding-left: $gutter-lg *2;
 
       &:hover {
-        color: #a7f7fa;
+        color: $brand-accent;
         cursor: pointer;
       }
     }
@@ -22,7 +22,11 @@
 
   .buttons {
     float: right;
-    width: 30vw;
-    margin-top: $gutter-sm/2;
+    width: 24vw;
+    margin-top: 1%;
+
+    .profile-icon {
+      width: 3vw;
+    }
   }
 }
