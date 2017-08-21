@@ -1,0 +1,44 @@
+@import "../../scss/lib/theme/vars";
+
+.container {
+  text-align: center;
+  // border: 2px solid red;
+  width: 100vw;
+  z-index: 0;
+  position: absolute;
+  top: 8vw;
+
+  .circTxt {
+    display: inline-block;
+    // border: 1px solid red;
+    color: $white;
+    font-size: 1.5vw;
+    font-family: $font-terciary;
+
+  }
+  .bottomTxt {
+    display: inline-block;
+    color: $white;
+    margin-top: 4vw;
+    font-family: $font-terciary;
+    font-size: 1.5vw;
+
+  }
+  .bannerTxt {
+    font-size: 8vw;
+    font-family: $font-primary;
+    color: $white;
+    margin-top: 5vw;
+    // margin-left: 22vw;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .container {
+
+    .bannerTxt {
+      font-size: 10vw;
+    }
+
+  }
+}

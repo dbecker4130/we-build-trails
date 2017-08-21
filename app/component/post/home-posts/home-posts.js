@@ -8,7 +8,8 @@ module.exports = {
   controllerAs: 'homePostCtrl',
   bindings: {
     // user: '<',
-    post: '<'
+    post: '<',
+    comment: '<'
   }
 };
 

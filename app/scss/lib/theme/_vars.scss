@@ -6,6 +6,7 @@ $brand-primary: #444; // :: DARK
 $brand-secondary: #F5F5F5; // :: LIGHT
 $brand-terciary: #CDCDCD; //:: MED
 $brand-background: rgba(0,0,0,0.4);
+$brand-accent: #a7f7fa;
 
 $btn-hover-primary: $brand-primary * 2;
 $btn-hover-secondary: $brand-secondary * 2;
@@ -24,3 +25,4 @@ $font-sm: $font-std / 2;
 
 $font-primary: "Helvetica Neue";
 $font-secondary: 'Poiret One', cursive;
+$font-terciary: 'Anonymous Pro', monospace;
