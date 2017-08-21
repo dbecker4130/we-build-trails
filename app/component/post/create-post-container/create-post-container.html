@@ -1,11 +1,11 @@
 <div class="create-post-container">
+  <p class="profile-header">Step 1: Add a Title</p>
   <div class="button-container" ng-if="!createPostContCtrl.showCreatePost">
     <button class="btn-secondary" ng-click="createPostContCtrl.showCreatePost = !createPostContainerCtrl.showCreatePost">Create Post</button>
   </div>
 
-  <p>Welcome! {{ createPostContCtrl.user.username }}</p>
-  <create-post ng-if="createPostContCtrl.showCreatePost && !createPostContCtrl.showUploadImage" post="createPostContCtrl.post"></create-post>
+  <create-post ng-if="createPostContCtrl.showCreatePost" post="createPostContCtrl.post"></create-post>
 
-  <post-item ng-if="createPostContCtrl.showUploadImage"></post-item>
+  <!-- <post-item ng-if="createPostContCtrl.showUploadImage"></post-item> -->
 
 </div>

@@ -1,17 +1,27 @@
 @import "../../../scss/lib/theme/vars";
 
 .create-post-container {
-  border: 1px solid green;
+  // border: 1px solid green;
   width: 60vw;
   height: 25vw;
   margin: 0 auto;
 
+  .profile-header {
+    // border: 1px solid red;
+    margin: $gutter-sm auto;
+    color: $white;
+    font-size: $font-lg;
+    width: 44%;
+  }
+
   .button-container {
-    border: 1px solid red;
-    margin-top: $gutter-std;
+    // border: 1px solid red;
+    // margin-top: $gutter-std;
     button {
       margin-left: 40%;
+      margin-top: 10%;
 
     }
+
   }
 }
