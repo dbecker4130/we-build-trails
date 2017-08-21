@@ -1,5 +1,8 @@
 @import "../../../scss/lib/theme/vars";
 
 .thumbnail-container {
-  width: 60vw;
+  // width: 60vw;
+  // margin: 0 auto;
+  max-height: 40vw;
+  overflow: auto;
 }

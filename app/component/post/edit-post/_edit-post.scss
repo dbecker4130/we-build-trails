@@ -1,1 +1,11 @@
 @import "../../../scss/lib/theme/vars";
+
+.edit {
+  .edit-post {
+    .edit-container {
+      border: 1px solid red;
+      z-index: 5;
+      
+    }
+  }
+}

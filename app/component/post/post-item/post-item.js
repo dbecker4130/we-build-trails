@@ -8,7 +8,6 @@ module.exports = {
   controllerAs: 'postItemCtrl',
   bindings: {
     post: '<',
-    image: '<',
     user: '<'
   }
 };

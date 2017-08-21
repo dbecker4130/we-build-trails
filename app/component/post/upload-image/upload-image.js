@@ -7,7 +7,7 @@ module.exports = {
   controller: ['$log', 'imageService', UploadImageController],
   controllerAs: 'uploadImageCtrl',
   bindings: {
-    post: '<',
+    post: '<'
   }
 };
 
@@ -17,8 +17,9 @@ function UploadImageController($log, imageService) {
   this.image = {};
 
   this.uploadPostImage = function(files) {
-    console.log(files);
-    imageService.uploadPostImage(this.post, files);
-
+    imageService.uploadPostImage(this.post, files)
+    .then(() => {
+      this.image.image = null;
+    });
   };
 }

@@ -2,12 +2,18 @@
 
 
 .upload-image {
-  margin-top: 1vw;
+  margin: 1vw 0;
   color: $black;
-  button {
-    margin-top: $gutter-sm/2;
-    margin-left: 2.5vw;
-    margin-bottom: $gutter-sm;
+  // border: 1px solid orange;
+  .upload-container {
 
+    button {
+      margin-top: $gutter-sm/2;
+      margin-left: 16.5vw;
+      margin-bottom: $gutter-sm;
+    }
+    h3 {
+      margin-left: 11vw;
+    }
   }
 }

@@ -2,21 +2,20 @@
   <div class="current-item" ng-if="!postItemCtrl.showEditPost">
     <div class="update-container" ng-if="!postItemCtrl.showEditPost">
       <button class="btn-secondary" ng-click="postItemCtrl.deletePost()">&#10005;</button>
-      <button class="btn-secondary" ng-click="postItemCtrl.showEditPost = !postItemCtrl.showEditPost">&#9998;</button>
+      <!-- <button class="btn-secondary" ng-click="postItemCtrl.showEditPost = !postItemCtrl.showEditPost">&#9998;</button> -->
     </div>
     <div class="name-label">
       <span>{{ postItemCtrl.post.title }}</span>
     </div>
 
-    <div>
-      <span>{{ postItemCtrl.user.username }}</span>
-    </div>
+    <!-- <div class="user-label">
+      <span>{{ postItemCtrl.post.userID.username }}</span>
+    </div> -->
 
-
+    <edit-post ng-if="postItemCtrl.showEditPost" post="postItemCtrl.post"></edit-post>
+    <upload-image post="postItemCtrl.post"></upload-image>
+    <thumbnail-container post="postItemCtrl.post"></thumbnail-container>
   </div>
-  <edit-post ng-if="postItemCtrl.showEditPost" post="postItemCtrl.post"></edit-post>
-  <upload-image post="postItemCtrl.post"></upload-image>
-  <thumbnail-container post="postItemCtrl.post"></thumbnail-container>
 
 
 </li>

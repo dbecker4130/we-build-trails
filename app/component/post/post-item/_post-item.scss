@@ -1,1 +1,33 @@
 @import "../../../scss/lib/theme/vars";
+
+.post-item {
+  .current-item {
+    display: inline-block;
+    float: left;
+    border: 1px solid $black;
+    width: 40vw;
+    margin-left: 3vw;
+    margin-bottom: $gutter-std;
+    .update-container {
+      // border: 1px solid red;
+      float: right;
+      // display: block;
+      height: 5vw;
+      width: 15vw;
+      margin-right: $gutter-std;
+
+      button {
+        float: right;
+        margin-left: $gutter-std;
+        margin-top: $gutter-std;
+        // display: block;
+      }
+    }
+    .name-label {
+      color: $white;
+      padding-top: $gutter-sm;
+      padding-left: $gutter-sm;
+
+    }
+  }
+}

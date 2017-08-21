@@ -23,7 +23,7 @@
     "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
-    "angular": "^1.6.5",
+    "angular": "^1.6.6",
     "angular-route": "^1.6.5",
     "angular-ui-router": "^0.4.2",
     "babel-core": "^6.25.0",
