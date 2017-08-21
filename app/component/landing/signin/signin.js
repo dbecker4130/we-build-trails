@@ -21,11 +21,11 @@ function SigninContoller($log, $location, authService) {
   });
 
   this.signin = function() {
-    $log.log('signinCtrl.singin()');
+    $log.log('signinCtrl.signin()');
 
     authService.signIn(this.user)
     .then(() => {
-      $location.url('./home');
+      $location.url('/home');
     });
   };
 }

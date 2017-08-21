@@ -18,16 +18,17 @@
 
     <div class="{
       'error': signinForm.password.$invalid && signinForm.$submitted,
-      'success': signinForm.password.$valid
+      'success': signinForm.password.$valid,
     }">
 
       <input
-        type="text"
         class="input-std"
+        name="password"
+        type="password"
+        ng-disabled="sigininForm.username.$invalid"
         placeholder="password"
         ng-minlength="6"
-        ng-model="signinCtrl.user.password"
-        ng-disabled="sigininForm.username.$invalid" />
+        ng-model="signinCtrl.user.password" required />
     </div>
     <button class="btn-secondary" type="submit">sign in</button>
   </form>
