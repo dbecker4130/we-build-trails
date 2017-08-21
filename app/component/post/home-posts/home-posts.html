@@ -21,9 +21,11 @@
       </ul>
     </div>
 
+
     <div class="post-comments-wrapper">
+      <!-- <create-comment post="postItemCtrl.post"></create-comment> -->
       <ul
-        ng-repeat="item in homePostCtrl.post.comments"
+        ng-repeat="item in homePostCtrl.post.commentIDs"
         post="homePostCtrl.post">
         <li>{{ item.desc }}</li>
       </ul>

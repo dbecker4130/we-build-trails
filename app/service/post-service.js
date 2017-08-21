@@ -153,6 +153,33 @@ function postService($q, $log, $http, authService) {
     });
   };
 
+  service.createComment = function(postData, comment) {
+    $log.debug('commentService.createComment()');
+
+    return authService.getToken()
+    .then( token => {
+      let url = `${__API_URL__}/api/post/${postData._id}/comment`; //eslint-disable-line
+      let config = {
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`
+        }
+      };
+      return $http.post(url, comment, config);
+    })
+    .then( res => {
+      $log.log('comment created');
+      let comment = res.data;
+      service.allComments.unshift(comment);
+      return comment;
+    })
+    .catch( err => {
+      $log.error(err.message);
+      return $q.reject(err);
+    });
+  };
+
   return service;
 
 }
