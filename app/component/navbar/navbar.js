@@ -34,7 +34,7 @@ function NavbarController($log, $location, $rootScope, authService) {
     }
 
     if (path !== '/join') {
-      this.hodeButtons = true;
+      this.hideButtons = false;
       authService.getToken()
       .catch( () => {
         $location.url('/join#signin');
