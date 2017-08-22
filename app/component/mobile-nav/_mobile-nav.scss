@@ -1,0 +1,52 @@
+@import "../../scss/lib/theme/vars";
+
+@media screen and (max-width: 800px) {
+  .mobile-nav {
+    display: block !important;
+  }
+  .navbar {
+    display: none;
+    .buttons {
+      .profile-icon {
+        display: none;
+      }
+    }
+  }
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0.5vw;
+  display: none;
+  z-index: 20;
+  margin-top: $gutter-sm;
+  // border: 1px solid red;
+  .hamburger {
+    width: 10vw;
+    font-size: 6vw;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0%;
+    &:hover {
+      color: rgba(255, 255, 255, 0.4);
+    }
+  }
+  .menu-list {
+    margin-top: 2vw;
+    background: rgba(0,0,0,0.4);
+    width: 30vw;
+    .menu-item {
+      color: $white;
+      font-size: 3vw;
+      font-family: $font-terciary;
+      padding: 10% 5%;
+      text-align: center;
+      cursor: pointer;
+      &:hover {
+        background-color: $white;
+        color: $black;
+      }
+    }
+  }
+}

@@ -3,7 +3,10 @@
 .home {
   .search {
     width: 40vw;
-    margin: 25vw 0 0 30vw;
+    position: absolute;
+    top: 28vw;
+    left: 30vw;
+    // margin: 25vw 0 0 30vw;
     // background: transparent;
     background: $brand-background;
     // border: none;
@@ -21,6 +24,29 @@
 }
 
   .home-posts-container {
-    margin-top: 5vw;
+    margin-top: 30vw;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .home {
+    .search {
+      top: 30vw;
+      left: 25vw;
+      width: 50vw;
+
+
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home {
+    .search {
+      display: none;
+    }
+    .home-posts-container {
+      margin-top: 35vw;
+    }
   }
 }

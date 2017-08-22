@@ -1,0 +1,16 @@
+<section class="mobile-nav"
+  ng-click="showMenu = !showMenu">
+
+  <button
+    class="hamburger"
+    >&#9776;</button>
+
+  <ul
+    class="menu-list"
+    ng-show="showMenu">
+    <li class="menu-item" ng-click="mobileNavCtrl.toHome()">HOME</li>
+    <li class="menu-item">SEARCH</li>
+    <li class="menu-item" ng-click="mobileNavCtrl.toProfile()">PROFILE</li>
+  </ul>
+
+</section>
