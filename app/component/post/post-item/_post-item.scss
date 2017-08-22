@@ -27,3 +27,19 @@
     }
   }
 }
+
+@media screen and (max-width: 800px) {
+  .post-item {
+    .current-item {
+      width: 45vw;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .post-item {
+    .current-item {
+      width: 92.5vw;
+    }
+  }
+}

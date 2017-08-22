@@ -1,20 +1,15 @@
 <section class="create-post">
 
-  <!-- <div class="create-post-link"
-    ng-model="checked" aria-label="Toggle ngShow"> -->
-
-  <!-- <input type="checkbox" ng-model="checked" aria-label="Toggle ngShow"> Create Post<br /> -->
-
-  <!-- <div class="check-element animate-show-hide" ng-show="checked"> -->
-  <!-- <button class="btn-secondary" ng-click="createPostCtrl.showCreatePost = !createPostCtrl.showCreatePost">&#9998;</button> -->
-
     <form class="post-form"
       ng-submit="createPostCtrl.createPost()"
       no-validate>
-      <input
+
+      <textarea
         class="title"
         placeholder="Title ..."
         ng-model="createPostCtrl.post.title" required>
+
+      </textarea>
 
       <button class="btn-secondary" type="submit">&#10143;</button>
 

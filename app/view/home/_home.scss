@@ -1,9 +1,13 @@
 @import "../../scss/lib/theme/vars";
 
 .home {
+
   .search {
     width: 40vw;
-    margin: 25vw 0 0 30vw;
+    position: absolute;
+    top: 28vw;
+    left: 30vw;
+    // margin: 25vw 0 0 30vw;
     // background: transparent;
     background: $brand-background;
     // border: none;
@@ -13,6 +17,27 @@
     color: $white;
 
   }
+  .mobile-search-container {
+    // border: 1px solid red;
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 1vw;
+    right: 1vw;
+    button {
+      float: right;
+      // margin: 2%;
+      .search-icon {
+        width: 4vw;
+      }
+    }
+    .mobile-search {
+      display: none;
+      @extend .search;
+      position: fixed;
+
+    }
+  }
 
   input::-webkit-input-placeholder {
   color: $white;
@@ -21,6 +46,34 @@
 }
 
   .home-posts-container {
-    margin-top: 5vw;
+    margin-top: 30vw;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .home {
+    .search {
+      top: 30vw;
+      left: 25vw;
+      width: 50vw;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home {
+    .search {
+      display: none;
+    }
+    .mobile-search-container {
+      display: block;
+      .mobile-search {
+        display: block;
+        top: 2vw;
+      }
+    }
+    .home-posts-container {
+      margin-top: 35vw;
+    }
   }
 }

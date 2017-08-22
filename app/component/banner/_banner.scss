@@ -12,7 +12,7 @@
     display: inline-block;
     // border: 1px solid red;
     color: $white;
-    font-size: 1.5vw;
+    font-size: $font-std;
     font-family: $font-terciary;
 
   }
@@ -21,11 +21,11 @@
     color: $white;
     margin-top: 4vw;
     font-family: $font-terciary;
-    font-size: 1.5vw;
+    font-size: $font-std;
 
   }
   .bannerTxt {
-    font-size: 8vw;
+    font-size: $font-lg *2;
     font-family: $font-primary;
     color: $white;
     margin-top: 5vw;
@@ -33,12 +33,35 @@
   }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (min-width: 1350px) {
   .container {
-
     .bannerTxt {
-      font-size: 10vw;
+      font-size: 6em;
     }
+  }
+}
 
+@media screen and (max-width: 800px) {
+  .container {
+    .bannerTxt {
+      font-size: 2.5em;
+    }
+    .circTxt {
+      font-size: $font-sm;
+    }
+    .bottomTxt {
+      font-size: $font-sm;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    .circTxt {
+      font-size: 0.3em;
+    }
+    .bottomTxt {
+      font-size: 0.3em;
+    }
   }
 }

@@ -14,3 +14,9 @@
     color: $white;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .signin-form {
+    margin: 40vw auto 0 auto;
+  }
+}

@@ -1,8 +1,24 @@
 <section class="home">
 
+  <div class="mobile-search-container"
+    ng-if="!mobileNavCtrl.showSearch">
+    <button class="btn-secondary"
+      ng-click="mobileNavCtrl.showSearch = !mobileNavCtrl.showSearch">
+      <img class="search-icon" src="../../assets/icons/search-icon.png" />
+    </button>
+    <input
+      ng-if="mobileNavCtrl.showSearch"
+      type="text"
+      class="mobile-search"
+      ng-model="homeCtrl.postSearchTerm"
+      placeholder="search by title or user" />
+  </div>
+
+  <mobile-nav></mobile-nav>
+
   <banner></banner>
 
-  <input type="text" class="search" ng-model="homeCtrl.postSearchTerm" placeholder="search by title or user"></input>
+  <input type="text" class="search" ng-model="homeCtrl.postSearchTerm" placeholder="search by title or user" />
 
 
   <div class="home-posts-container">

@@ -1,0 +1,52 @@
+@import "../../scss/lib/theme/vars";
+
+@media screen and (max-width: 800px) {
+  .mobile-nav {
+    display: block !important;
+  }
+  .navbar {
+    display: none;
+    .buttons {
+      .profile-icon {
+        display: none;
+      }
+    }
+  }
+}
+
+.mobile-nav {
+  display: none;
+  z-index: 20;
+  position: fixed;
+  top: 0.5vw;
+  .hamburger {
+    width: 10vw;
+    font-size: 6vw;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0%;
+    &:hover {
+      color: rgba(255, 255, 255, 0.4);
+    }
+  }
+  .menu-list {
+    top: 10vw;
+    background: rgba(0,0,0,0.4);
+    width: 30vw;
+    position: absolute;
+    cursor: pointer;
+    .menu-item {
+      color: $white;
+      font-size: 3vw;
+      font-family: $font-primary;
+      padding: 10% 5%;
+      text-align: center;
+
+      &:hover {
+        background-color: $white;
+        color: $black;
+      }
+    }
+  }
+}

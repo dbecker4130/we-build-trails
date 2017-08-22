@@ -6,31 +6,41 @@
     font-size: 2.5vw;
     color: $white;
     text-align: center;
-    margin-bottom: $gutter-std;
+    margin: $gutter-std 0;
     font-family: $font-primary;
   }
   .post-form {
-    // border: 1px solid red;
-    height: 20vw;
+    height: 15vw;
     width: 100%;
     background-color: $brand-background;
-    // padding: 3vw;
     .title {
-      width: 90%;
+      width: 70%;
+      height: 7.5vw;
       margin: $gutter-std;
       font-size: $font-std;
       border: 1px solid $white;
       margin-bottom: 1vw;
-      text-align: center;
+      padding: 1%;
       background-color: transparent;
       color: $white;
     }
 
     button {
-      margin: $gutter-std;
+      margin: 5vw 2.5vw 0 0;
       float: right;
-      font-size: 4vw;
+      font-size: 2em;
       padding: 0% 3%;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .create-post {
+    .post-form {
+      button {
+        font-size: 1.2em;
+        margin: 8% 2.5% 0 0;
+      }
     }
   }
 }
