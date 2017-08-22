@@ -2,9 +2,12 @@
 
   <banner></banner>
 
+  <input type="text" class="search" ng-model="homeCtrl.postSearchTerm" placeholder="search by title or user"></input>
+
+
   <div class="home-posts-container">
     <home-posts
-      ng-repeat="item in homeCtrl.homePostArray"
+      ng-repeat="item in homeCtrl.homePostArray | postSearch: homeCtrl.postSearchTerm"
       post="item">
     </home-posts>
   </div>

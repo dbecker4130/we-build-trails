@@ -1,7 +1,26 @@
 @import "../../scss/lib/theme/vars";
 
 .home {
+  .search {
+    width: 40vw;
+    margin: 25vw 0 0 30vw;
+    // background: transparent;
+    background: $brand-background;
+    // border: none;
+    border: 1px solid $white;
+    border-radius: 5px;
+    font-size: $font-std;
+    color: $white;
+
+  }
+
+  input::-webkit-input-placeholder {
+  color: $white;
+  font-weight: 100;
+  text-align: center;
+}
+
   .home-posts-container {
-    margin-top: 25vw;
+    margin-top: 5vw;
   }
 }
