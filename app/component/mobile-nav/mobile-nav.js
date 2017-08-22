@@ -11,6 +11,8 @@ module.exports = {
 function MobileNavController($log, $location) {
   $log.debug('MobileNavController');
 
+  this.showSearch = false;
+
   this.toProfile = function() {
     $location.url('/profile');
   };

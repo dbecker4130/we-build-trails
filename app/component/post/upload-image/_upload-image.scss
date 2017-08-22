@@ -18,3 +18,13 @@
     }
   }
 }
+
+@media screen and (max-width: 800px) {
+  .upload-image {
+    .upload-container {
+      button {
+        padding: 2% 8%;
+      }
+    }
+  }
+}

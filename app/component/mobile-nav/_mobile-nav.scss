@@ -39,10 +39,11 @@
     .menu-item {
       color: $white;
       font-size: 3vw;
-      font-family: $font-terciary;
+      font-family: $font-primary;
       padding: 10% 5%;
       text-align: center;
       cursor: pointer;
+
       &:hover {
         background-color: $white;
         color: $black;

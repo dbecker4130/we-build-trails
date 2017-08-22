@@ -11,10 +11,17 @@
     <form class="post-form"
       ng-submit="createPostCtrl.createPost()"
       no-validate>
-      <input
+      <!-- <input
+        class="title"
+        placeholder="Title ..."
+        ng-model="createPostCtrl.post.title" required> -->
+
+      <textarea
         class="title"
         placeholder="Title ..."
         ng-model="createPostCtrl.post.title" required>
+
+      </textarea>
 
       <button class="btn-secondary" type="submit">&#10143;</button>
 

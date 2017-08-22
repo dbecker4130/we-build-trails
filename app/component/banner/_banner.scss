@@ -32,3 +32,25 @@
     // margin-left: 22vw;
   }
 }
+
+@media screen and (min-width: 1350px) {
+  .container {
+    .bannerTxt {
+      font-size: 6em;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    .bannerTxt {
+      font-size: 2.5em;
+    }
+    .circTxt {
+      font-size: $font-sm;
+    }
+    .bottomTxt {
+      font-size: $font-sm;
+    }
+  }
+}

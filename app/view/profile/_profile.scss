@@ -2,12 +2,6 @@
 
 .profile {
 
-  h2 {
-    margin: 0 auto $gutter-sm auto;
-    width: 28%;
-    color: $white;
-    font-size: $font-lg;
-  }
   .posts-container {
     // border: 1px solid red;
     width: 90%;
@@ -16,5 +10,14 @@
     padding-top: $gutter-std;
     background: $brand-background;
     margin-bottom: $gutter-std;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .profile {
+    .posts-container {
+      width: 100%;
+      left: 0;
+    }
   }
 }

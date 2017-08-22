@@ -46,5 +46,5 @@ function BannerController($log) {
   }
 
   circularText('THE TRAILS BLOG', 200, 0);
-  inverseCircle('EST WE COULD PEDAL', 200, 0);
+  inverseCircle('SCOOP, PACK, SMEAR, REPEAT', 200, 0);
 }
