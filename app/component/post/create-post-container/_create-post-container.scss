@@ -7,8 +7,9 @@
 
   .profile-headers {
     // border: 1px solid red;
-    text-align: center;
-    margin-top: $gutter-std;
+    // text-align: center;
+    padding-left: 20vw;
+    margin: 2%;
     color: $white;
     font-size: $font-lg;
   }
@@ -16,10 +17,23 @@
   .button-container {
     // border: 1px solid red;
     margin-bottom: $gutter-std;
-    height: 10vw;
+    // height: 10vw;
+    // width: 20%;
+    margin: 0 auto;
     button {
-      margin-left: 42%;
       margin-top: $gutter-std;
+      margin-left: 21.5vw;
+      margin-bottom: $gutter-std;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .create-post-container {
+    .button-container {
+      button {
+        margin-left: 22.5vw;
+      }
     }
   }
 }
@@ -27,11 +41,23 @@
 @media screen and (max-width: 800px) {
   .create-post-container {
     margin-top: 4em;
-  }
 
-  .button-container {
-    button {
-      margin-left: 39.5%;
+    .profile-headers {
+      margin-top: 0;
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .create-post-container {
+    .profile-headers {
+      padding-left: 15vw;
+    }
+    .button-container {
+      button {
+        margin-left: 18vw;
+      }
     }
   }
 }

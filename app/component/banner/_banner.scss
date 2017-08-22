@@ -54,3 +54,14 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .container {
+    .circTxt {
+      font-size: 0.3em;
+    }
+    .bottomTxt {
+      font-size: 0.3em;
+    }
+  }
+}

@@ -26,10 +26,21 @@
     }
 
     button {
-      margin: 4.5vw 2.5vw 0 0;
+      margin: 5vw 2.5vw 0 0;
       float: right;
-      font-size: 4vw;
+      font-size: 2em;
       padding: 0% 3%;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .create-post {
+    .post-form {
+      button {
+        font-size: 1.2em;
+        margin: 8% 2.5% 0 0;
+      }
     }
   }
 }

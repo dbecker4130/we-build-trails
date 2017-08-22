@@ -21,3 +21,11 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .profile {
+    .posts-container {
+      top: 50vw;
+    }
+  }
+}
