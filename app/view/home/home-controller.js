@@ -19,4 +19,5 @@ function HomeController($log, $location, authService, postService) {
   };
 
   this.fetchAllPostsFromDB();
+
 }

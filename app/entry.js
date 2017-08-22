@@ -38,4 +38,11 @@ context.keys().forEach( key => {
   weBuildTrails.component(name, module);
 });
 
+context = require.context('./filter/', true, /\.js$/);
+context.keys().forEach(key => {
+  let name = camelcase(path.basename(key, '.js'));
+  let module = context(key);
+  weBuildTrails.filter(name, module);
+});
+
 // NOTE still need context for Directive and Filter if necessary
