@@ -1,39 +1,37 @@
 @import "../../../scss/lib/theme/vars";
 
 .create-post-container {
-  // border: 1px solid green;
   width: 60vw;
   height: 28vw;
   margin: 0 auto;
 
-  .step1 {
-    border: 1px solid red;
-    // width: 20vw;
+  .profile-headers {
+    // border: 1px solid red;
     text-align: center;
     margin-top: $gutter-std;
-    // margin: $gutter-sm auto;
     color: $white;
     font-size: $font-lg;
   }
 
-  .step2 {
-
-  }
-
   .button-container {
-    border: 1px solid red;
+    // border: 1px solid red;
     margin-bottom: $gutter-std;
+    height: 10vw;
     button {
-      margin-left: 39.5%;
-      margin-top: 10%;
-
+      margin-left: 42%;
+      margin-top: $gutter-std;
     }
-
   }
 }
 
 @media screen and (max-width: 800px) {
   .create-post-container {
     margin-top: 4em;
+  }
+
+  .button-container {
+    button {
+      margin-left: 39.5%;
+    }
   }
 }

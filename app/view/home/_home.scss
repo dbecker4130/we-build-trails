@@ -1,6 +1,8 @@
 @import "../../scss/lib/theme/vars";
 
 .home {
+
+
   .search {
     width: 40vw;
     position: absolute;
@@ -15,6 +17,54 @@
     font-size: $font-std;
     color: $white;
 
+  }
+  .mobile-search-container {
+    // border: 1px solid red;
+    position: absolute;
+    width: 100%;
+    top: 1vw;
+    right: 1vw;
+    button {
+      float: right;
+      // margin: 2%;
+      .search-icon {
+        width: 4vw;
+      }
+    }
+    .mobile-search {
+      display: none;
+      @extend .search;
+      position: fixed;
+
+    }
+  }
+
+  .profile-btn-container {
+    // border: 1px solid blue;
+    position: absolute;
+    width: 100%;
+    top: 10vw;
+    right: 1vw;
+    button {
+      float: right;
+      // margin: 2%;
+      .profile-btn {
+        width: 4vw;
+      }
+    }
+  }
+
+  .logout-btn-container {
+    position: absolute;
+    width: 100%;
+    top: 20vw;
+    right: 1vw;
+    button {
+      float: right;
+      .logout-btn {
+        width: 4vw;
+      }
+    }
   }
 
   input::-webkit-input-placeholder {
@@ -34,8 +84,6 @@
       top: 30vw;
       left: 25vw;
       width: 50vw;
-
-
     }
   }
 }
@@ -44,6 +92,12 @@
   .home {
     .search {
       display: none;
+    }
+    .mobile-search-container {
+      .mobile-search {
+        display: block;
+        top: 2vw;
+      }
     }
     .home-posts-container {
       margin-top: 35vw;

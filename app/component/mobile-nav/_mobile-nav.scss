@@ -15,12 +15,10 @@
 }
 
 .mobile-nav {
-  position: fixed;
-  top: 0.5vw;
   display: none;
   z-index: 20;
-  margin-top: $gutter-sm;
-  // border: 1px solid red;
+  position: fixed;
+  top: 0.5vw;
   .hamburger {
     width: 10vw;
     font-size: 6vw;
@@ -33,16 +31,17 @@
     }
   }
   .menu-list {
-    margin-top: 2vw;
+    top: 10vw;
     background: rgba(0,0,0,0.4);
     width: 30vw;
+    position: absolute;
+    cursor: pointer;
     .menu-item {
       color: $white;
       font-size: 3vw;
       font-family: $font-primary;
       padding: 10% 5%;
       text-align: center;
-      cursor: pointer;
 
       &:hover {
         background-color: $white;

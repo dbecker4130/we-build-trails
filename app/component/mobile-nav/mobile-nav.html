@@ -9,12 +9,9 @@
     class="menu-list"
     ng-show="showMenu">
     <li class="menu-item" ng-click="mobileNavCtrl.toHome()">HOME</li>
-    <li class="menu-item" ng-click="mobileNavCtrl.showSearch = !mobileNavCtrl.showSearch">SEARCH</li>
     <li class="menu-item" ng-click="mobileNavCtrl.toProfile()">PROFILE</li>
+    <li class="menu-item" ng-click="mobileNavCtrl.toLogout()">LOGOUT</li>
   </ul>
 
-  <div class="mobile-search" ng-if="mobileNavCtrl.showSearch">
-    <input />
-  </div>
 
 </section>
