@@ -1,0 +1,24 @@
+<section class="edit-user">
+  <form class="edit-user-form"
+    name="editUser"
+    ng-submit="editUserCtrl.updateUserInfo()"
+    no-validate>
+
+    <div class="edit-user-container">
+      <img ng-src="{{editUserCtrl.user.profileImageURI}}">
+
+      <button type="submit" class="btn-secondary">update</button>
+
+      <div class="fieldset-editing">
+        <fieldset>
+          <span class="item-label username-label">username:</span>
+          <input name="username" class="input-std username-input" ng-model="editUserCtrl.user.username" />
+        </fieldset>
+        <fieldset>
+          <span class="item-label email-label">email:</span>
+          <input name="email" class="input-std email-input" ng-model="editUserCtrl.user.email" />
+        </fieldset>
+      </div>
+    </div>
+  </form>
+</section>

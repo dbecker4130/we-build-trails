@@ -1,5 +1,7 @@
 'use strict';
 
+require('./_user.scss');
+
 module.exports = {
   template: require('./user.html'),
   controller: ['$log', 'profileService', UserController],

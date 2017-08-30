@@ -1,0 +1,13 @@
+@import "../../../scss/lib/theme/vars";
+
+.user {
+  .user-container {
+    border: 1px solid red;
+    .profile-info {
+
+      .profile-image {
+        width: 25vw;
+      }
+    }
+  }
+}
