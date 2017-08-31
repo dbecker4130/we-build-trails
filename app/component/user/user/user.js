@@ -15,7 +15,7 @@ function UserController($log, profileService) {
   $log.debug('userCtrl()');
 
   this.changeEdit = {
-    showEditProofile: false
+    showEditProfile: false
   };
 
   this.user = null;

@@ -1,5 +1,7 @@
 'use strict';
 
+require('./_upload-profile.scss');
+
 module.exports = {
   template: require('./upload-profile.html'),
   controller: ['$log', 'profileService', UploadProfileImageController],

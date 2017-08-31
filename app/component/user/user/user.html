@@ -1,16 +1,20 @@
 <section class="user">
   <div class="user-container" ng-if="!userCtrl.changeEdit.showEditProfile">
 
+    <img class="profile-image" ng-src="{{userCtrl.user.profileImageURI}}">
+
+    <div class="profile-info">
+      <h3> {{userCtrl.user.username}}</h3>
+      <!-- <h3> {{userCtrl.user.email}}</h3> -->
+    </div>
+
     <div class="update-container" ng-if="!userCtrl.changeEdit.showEditProfile">
       <button class="btn-secondary" ng-click="userCtrl.changeEdit.showEditProfile = !userCtrl.changeEdit.showEditProfile">edit</button>
     </div>
 
-    <div class="profile-info">
-      <img class="profile-image" ng-src="{{userCtrl.user.profileImageURI}}">
-      <span> username: {{userCtrl.user.username}}</span>
-      <span> email: {{userCtrl.user.email}}</span>
-    </div>
   </div>
+
+  <upload-profile></upload-profile>
 
   <edit-user ng-if="userCtrl.changeEdit.showEditProfile" user="userCtrl.user" change-edit="userCtrl.changeEdit"></edit-user>
 </section>

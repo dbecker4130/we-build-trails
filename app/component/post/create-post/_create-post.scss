@@ -10,9 +10,10 @@
     font-family: $font-primary;
   }
   .post-form {
-    height: 15vw;
+    // height: 15vw;
     width: 100%;
-    background-color: $brand-background;
+    // border: 1px solid green;
+    // background-color: $brand-background;
     .title {
       width: 70%;
       height: 7.5vw;
@@ -21,7 +22,7 @@
       border: 1px solid $white;
       margin-bottom: 1vw;
       padding: 1%;
-      background-color: transparent;
+      background-color: $brand-background;
       color: $white;
     }
 

@@ -1,5 +1,7 @@
 'use strict';
 
+require('./_edit-user.scss');
+
 module.exports = {
   template: require('./edit-user.html'),
   controller: ['$log', 'profileService','authService', EditUserController],

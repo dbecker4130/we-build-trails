@@ -1,0 +1,14 @@
+@import "../../../scss/lib/theme/vars";
+
+.edit-user {
+  .edit-user-form {
+    .edit-user-container {
+      margin-left: $gutter-std;
+      margin-top: $gutter-std;
+      img {
+        width: 25vw;
+        float: left;
+      }
+    }
+  }
+}
