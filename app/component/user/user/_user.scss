@@ -1,0 +1,29 @@
+@import "../../../scss/lib/theme/vars";
+
+.user {
+  .user-container-inner {
+    // border: 1px solid red;
+    .profile-image {
+      width: 20vw;
+      height: 20vw;
+      // border: 1px dashed black;
+      float: left;
+    }
+
+    .update-container {
+      // border: 1px solid orange;
+      margin-top: 1.5vw;
+      button {
+        margin-left: $gutter-std;
+      }
+    }
+
+    .profile-info {
+      // border: 1px solid green;
+      font-size: $font-lg;
+      color: $white;
+      margin-left: 23vw;
+      // width: 30vw;
+    }
+  }
+}

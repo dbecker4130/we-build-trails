@@ -9,7 +9,18 @@
   .user-wrapper {
     float: left;
     color: $white;
-    padding: 2%;
+    padding: 2.5%;
+    .post-user {
+      font-size: 1.5em;
+      padding-bottom: 10%;
+      text-align: center;
+    }
+    .post-user-pic {
+      width: 5vw;
+      height: 5vw;
+      border-radius: 5vw;
+      margin-left: 2vw;
+    }
   }
 
   .info-wrapper {
@@ -21,7 +32,7 @@
       // font-size: $font-sm;
       font-size: 0.7rem;
       padding: 2% 0;
-      margin-left: $gutter-sm;
+      // margin-left: $gutter-sm;
     }
   }
 
