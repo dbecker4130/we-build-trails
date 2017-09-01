@@ -1,8 +1,12 @@
 @import "../../../scss/lib/theme/vars";
 
 .upload-profile-image {
+  // border: 1px solid blue;
+
+  margin-left: 23vw;
+  margin-top: $gutter-sm;
+
   button {
-    // float: right;
-    margin-left: $gutter-std;
+    padding: 2% 4%;
   }
 }

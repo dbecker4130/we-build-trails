@@ -26,7 +26,7 @@ function profileService($q, $log, $http, Upload, authService) {
       $log.log('user data retrieved');
       service.userData = res.data;
       if (!service.userData.profileImageURI) {
-        service.userData.profileImageURI = '../assets/icons/User-Profile.png';
+        service.userData.profileImageURI = 'https://s-media-cache-ak0.pinimg.com/236x/dc/26/8b/dc268be243b9176a64ebf2fe7aa47ba1.jpg';
 
       }
       $log.log('service.userData', service.userData);

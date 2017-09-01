@@ -9,6 +9,28 @@
         width: 25vw;
         float: left;
       }
+
+      button {
+        margin-left: $gutter-std;
+      }
+
+      .fieldset-editing {
+        fieldset {
+          margin-top: $gutter-sm/2;
+          span {
+            margin-left: 5vw;
+            color: $white;
+          }
+          input {
+            border: 1px solid $white;
+            background: $brand-background;
+            padding: 1%;
+            color: $white;
+            width: 30vw;
+          }
+
+        }
+      }
     }
   }
 }

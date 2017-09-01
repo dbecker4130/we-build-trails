@@ -15,30 +15,25 @@
   }
 
   .button-container {
-    border: 1px solid red;
-    // margin-bottom: $gutter-std;
-    // margin-top: 10vw;
-    // height: 10vw;
-    // width: 20%;
-    // margin: 0 auto;
+    // border: 1px solid red;
     button {
-      margin-top: $gutter-std;
-      margin-left: 21.5vw;
-      margin-bottom: $gutter-std;
+      margin-top: $gutter-sm;
+      margin-left: 3vw;
+      margin-bottom: $gutter-sm;
     }
   }
 }
 
-@media screen and (max-width: 1400px) {
-  .create-post-container {
-    .button-container {
-      button {
-        margin-left: 22.5vw;
-      }
-    }
-  }
-}
-// 
+// @media screen and (max-width: 1400px) {
+//   .create-post-container {
+//     .button-container {
+//       button {
+//         margin-left: 22.5vw;
+//       }
+//     }
+//   }
+// }
+//
 // @media screen and (max-width: 800px) {
 //   .create-post-container {
 //     margin-top: 4em;

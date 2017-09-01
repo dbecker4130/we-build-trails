@@ -1,6 +1,10 @@
 @import "../../../scss/lib/theme/vars";
 
 .user-container {
-  border: 1px solid blue;
-  margin: $gutter-std;
+  border: 1px solid $white;
+  width: 60vw;
+  margin: $gutter-std auto $gutter-sm auto;
+  padding-top: $gutter-sm;
+  padding-left: $gutter-sm;
+  padding-bottom: 4%;
 }
