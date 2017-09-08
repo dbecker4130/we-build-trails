@@ -4,14 +4,14 @@ require('./_user.scss');
 
 module.exports = {
   template: require('./user.html'),
-  controller: ['$log', 'profileService', UserController],
+  controller: ['$log', 'profileService', 'authService', UserController],
   controllerAs: 'userCtrl',
   bindings: {
     user: '<'
   }
 };
 
-function UserController($log, profileService) {
+function UserController($log, profileService, authService) {
   $log.debug('userCtrl()');
 
   this.changeEdit = {

@@ -1,13 +1,13 @@
 @import "../../../scss/lib/theme/vars";
 
 .post-item {
+  width: 40vw;
+  float: left;
+  display: inline-block;
+  border: 1px solid $black;
+  margin-left: 3vw;
+  margin-bottom: $gutter-std;
   .current-item {
-    display: inline-block;
-    float: left;
-    border: 1px solid $black;
-    width: 40vw;
-    margin-left: 3vw;
-    margin-bottom: $gutter-std;
     .update-container {
       // border: 1px solid red;
       margin-right: $gutter-std;
