@@ -2,9 +2,15 @@
 
 .edit {
   .edit-post {
+    margin-top: $gutter-sm;
     .edit-container {
-      border: 1px solid red;
-      z-index: 5;
+      // width: 30vw;
+      // float: right;
+      .title-input {
+        float: right;
+        width: 60%;
+        
+      }
 
     }
   }
